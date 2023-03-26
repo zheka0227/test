@@ -1,0 +1,87 @@
+.side-main{
+    display: flex;
+    $directoryeditwidth: 300px;
+    .main{
+        display: flex;
+        //flex-grow: 5.7;
+        flex-direction: column;
+        padding: 30px 16px 38px 30px;
+        width: calc(100% - $directoryeditwidth);
+        .row1{
+            display: flex;
+            height: 30px;
+            margin-bottom: 20px;
+            #directories{
+                $directorieswidth: 400px;
+                width: $directorieswidth;
+                height: 100%;
+                box-shadow: inset 0px 2px 5px 0px rgba(205, 205, 205, 1);
+                border-radius: 5px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                //font-size: 12px;
+                line-height: 14px;
+                padding: 8px 10px;
+                margin-right: 20px;
+                background: transparent;
+                background-image: url("../../assets/Main/Row1/arrow.svg");
+                background-repeat: no-repeat;
+                background-position-x: calc($directorieswidth - 20px);
+                background-position-y: 15px;
+            }
+            .directories-icons{
+                display: flex;
+                flex-wrap: nowrap;
+                img{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .row2{
+            display: flex;
+            height: 100%;
+            .directory{
+                display: flex;
+                min-width: 300px;
+                width: 100%;
+                height: 100vh;
+                box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+                border-radius: 6px;
+                margin-right: 38px;
+                padding: 30px;
+            }
+            .directory-edit{
+                //width: 100%;
+                min-width: $directoryeditwidth;
+                height: 100%;
+                box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+                border-radius: 6px;
+                padding: 10px;
+                .input{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 10px;
+                }
+                .save{
+                    height: 40px;
+                    background: #0F4C82;
+                    border-radius: 6px;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                }
+            }
+
+        }
+    }
+}
+
+input{
+    height: 40px;
+    box-shadow: inset 0px 2px 5px #CDCDCD;
+    border-radius: 5px;
+    padding: 5px;
+}
